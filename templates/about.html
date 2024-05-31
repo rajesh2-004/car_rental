@@ -9,19 +9,17 @@
 </head>
   <body>
     <nav class="navbar">
-        <div class="logo">Car Rental Management</div>
+        <div class="logo">Nani's-Cars</div>
         <div class="nav-links">
             <a href="/">Home</a>
             <a href="#about">About</a>
-            <a href="/book">Book Your Car</a>
-            <a href="/cars">Cars</a>
             <a href="/register">Login</a>
             <a href="#contact">Contact Us</a>
         </div>
     </nav>
 
     <div class="container mt-4">
-        <h1>About Car Rental Management</h1>
+        <h1>ABOUT US!</h1>
         <div class="about-text">
             <p>
                 Car rental management involves handling the rental process of vehicles to customers. It includes managing vehicle availability, bookings, customer information, billing, and other administrative tasks.
@@ -35,44 +33,39 @@
         </div>
     </div>
 
-    <footer class="footer mt-auto bg-dark text-white">
-        <div class="container">
-            <div class="footer d-flex justify-content-between">
-                <div class="footer-col text-center">
-                    <h5>CONTACT INFO</h5>
-                    <p><i class="fa fa-map-marker-alt"></i>123 Main Street, Anytown, USA</p>
-                    <p><i class="fa fa-envelope"></i>Email: info@carrentalsystem.com</p>
-                    <p><i class="fa fa-phone"></i>Phone: (123) 456-7890</p>
-                </div>
-                <div class="footer-col text-center">
-                    <h5>MODULES</h5>
-                    <p><a href="#">Booking Module</a></p>
-                    <p><a href="#">User Module</a></p>
-                    <p><a href="#">Car Search Module</a></p>
-                    <p><a href="#">Login Module</a></p>
-                    <p><a href="#">Car Management Module</a></p>
-                </div>
-                <div class="footer-col text-center">
-                    <h5>PROJECT LINKS</h5>
-                    <p><a href="#home">Home</a></p>
-                    <p><a href="#about">About Us</a></p>
-                    <p><a href="#contact">Contact</a></p>
-                    <p><a href="#login">Login</a></p>
-                    <p><a href="mailto:info@carrentalsystem.com">Email</a></p>
-                </div>
-                <div class="footer-col text-center">
-                    <h5>ABOUT CAR RENTAL</h5>
-                    <p>Our Story</p>
-                    <p>Careers</p>
-                    <p>Press</p>
+    <div class="container mt-4">
+        <h2>Why Choose Us?</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'img/safe.jpg' %}" class="card-img-top" alt="Safe">
+                    <div class="card-body">
+                        <h5 class="card-title">Safe</h5>
+                        <p class="card-text">Our cars are equipped with the latest safety features to ensure a secure journey for you and your loved ones.</p>
+                    </div>
                 </div>
             </div>
-            <div class="text-center mt-3">
-                &copy; 2024 Car Rental Management Developed by Rajesh
-                <p>Under the Esteemed Guidance of K.V.Chandhra Sekhar, Assistant Professor,Dept of CSM & CSD</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'img/afford.jpg' %}" class="card-img-top" alt="Affordable Prices">
+                    <div class="card-body">
+                        <h5 class="card-title">Affordable Prices</h5>
+                        <p class="card-text">We offer competitive pricing without compromising on quality, making our services accessible to everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'img/hyginic.jpg' %}" class="card-img-top" alt="Hygienic">
+                    <div class="card-body">
+                        <h5 class="card-title">Hygienic</h5>
+                        <p class="card-text">We maintain the highest standards of cleanliness and hygiene in all our vehicles, ensuring a pleasant experience.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+
 
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
   </body>
