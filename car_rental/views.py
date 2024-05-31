@@ -19,3 +19,5 @@ def register(request):
     return render(request,"register.html")
 def cars(request):
     return render(request,"cars.html")
+def contact(request):
+    return render(request,"contact.html")

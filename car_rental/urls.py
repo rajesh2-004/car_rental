@@ -33,7 +33,7 @@ from .views import about
 from .views import main
 from .views import book
 from .views import sample
-from .views import register,cars
+from .views import register,cars,contact
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -45,4 +45,5 @@ urlpatterns = [
     path('sample/',sample,name='sample'), 
     path('register/',register,name='register'),
      path('cars/',cars,name='cars'),
+     path('contact/',contact,name='contact'),
 ]
