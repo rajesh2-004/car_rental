@@ -1,72 +1,77 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-<title>ABOUT</title>
-<style>
-    body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #cc7171;;
-    padding: 10px 20px;
-}
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #cc7171;
+            padding: 10px 20px;
+        }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-}
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
 
-.navbar a:hover {
-    background-color: rgb(0, 187, 255);
-}
+        .navbar a:hover {
+            background-color:skyblue;
+        }
 
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-}
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
 
-.nav-links {
-    display: flex;
-    gap: 10px;
-}
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
 
-.nav-links a {
-    font-weight: bold; /* Make specific navbar links bold */
-}
+        .nav-links a {
+            font-weight: bold; /* Make specific navbar links bold */
+        }
 
-.about-text {
-    font-size: 1.2rem;
-    text-align: left; /* Align text to the left */
-}
+        .about-text {
+            font-size: 1.2rem;
+            text-align: left; /* Align text to the left */
+        }
 
-.container {
-    flex: 1;
-    margin-bottom: 30px; /* Add space at the bottom of the container */
-}
+        .container.mt-4 {
+            flex: 1;
+            margin-bottom: 30px; /* Add space at the bottom of the container */
+            background-color: skyblue; /* Light grey background color */
+            padding: 20px;
+            border-radius: 8px;
+        }
 
-.card {
-    margin-bottom: 20px;
-}
+        .card {
+            margin-bottom: 20px;
+        }
 
-</style>
+    </style>
 </head>
-  <body>
-    <nav class="navbar">
-        <div class="logo">Nani's-Cars</div>
+<body>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo" style="color: white;">Nani's-Cars</div>
         <div class="nav-links">
             <a href="/">Home</a>
-            <a href="#about">About</a>
+            <a href="#about" class="active">About</a>
             <a href="/register">Login</a>
             <a href="#contact">Contact Us</a>
         </div>
@@ -120,7 +125,6 @@
         </div>
     </div>
 
-
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-  </body>
+</body>
 </html>

@@ -10,20 +10,20 @@
     <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
     <style>
         .navbar-custom .nav-link {
-            color: black !important;
+            color: white !important;
             font-size: 1.2rem;
             font-weight: bold;
         }
         .navbar-custom .navbar-brand {
-            color: black !important;
+            color: white !important;
             font-size: 2.5rem;
             font-weight: bold;
         }
         .navbar-custom .nav-link:hover {
-            color: orange !important;
+            color: rgb(0, 182, 254) !important;
         }
         .myNav {
-            background-color: yellow;
+            background-color: #cc7171;
         }
         body {
             background-color: white;
@@ -31,19 +31,19 @@
         .footer {
             text-align: center;
             margin-top: 50px;
-            color: orange;
+            color: black;
         }
         .container {
             max-width: 900px;
             margin-top: 50px;
-            background-color: #333;
+            background-color:skyblue;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .form-label {
             font-weight: bold;
-            color: white;
+            color:black;
         }
         .form-control {
             background-color: #555;
@@ -55,14 +55,15 @@
         }
         .btn-primary {
             width: 100%;
-            background-color: #ffc107;
-            border-color: #ffc107;
-            color: #333;
+            background-color: lightcoral;
+            border-color: black;
+            color: black;
+            
         }
         .btn-primary:hover {
-            background-color: #ffca28;
-            border-color: #ffca28;
-            color: #333;
+            background-color: rgb(43, 43, 183);
+            border-color: black;
+            color: white;
         }
         .alert {
             background-color: yellow;
@@ -107,7 +108,7 @@
                 <img src="{% static 'img/register.jpg' %}" alt="Car Rental Image" class="register-image">
             </div>
             <div class="col-md-6">
-                <h1 class="text-center mb-4" style="color: orange;">SIGN-UP</h1>
+                <h1 class="text-center mb-4" style="color: black; font-weight: 900;">SIGN-UP</h1>
                 {% if messages %}
                     <div class="alert alert-danger">
                         {% for message in messages %}
